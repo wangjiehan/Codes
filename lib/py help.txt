@@ -1,0 +1,11 @@
+>>> help('aaa'.split)
+Help on built-in function split:
+
+split(...) method of builtins.str instance
+    S.split(sep=None, maxsplit=-1) -> list of strings
+
+    Return a list of the words in S, using sep as the
+    delimiter string.  If maxsplit is given, at most maxsplit
+    splits are done. If sep is not specified or is None, any
+    whitespace string is a separator and empty strings are
+    removed from the result.
