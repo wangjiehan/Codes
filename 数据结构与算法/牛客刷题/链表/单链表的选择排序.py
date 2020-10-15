@@ -9,6 +9,7 @@ class ListNode:
 # @return ListNode类
 #
 # 先存值，对值排序。再另外根据值构建新的结点，连接出新的链表
+# 归并排序加双指针是常规解
 class Solution:
     def sortInList(self , head ):
         # write code here
