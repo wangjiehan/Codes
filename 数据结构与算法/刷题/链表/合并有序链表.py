@@ -1,17 +1,10 @@
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-#
-# 
-# @param l1 ListNode类 
-# @param l2 ListNode类 
-# @return ListNode类
-#
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 class Solution:
-    def mergeTwoLists(self , l1 , l2 ):
-        # write code here
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         if not l1 and not l2:
             return None
         if not l1:
@@ -36,13 +29,7 @@ class Solution:
                 head = head.next
                 l2 = l2.next
         if not l1:
-            while l2:
-                head.next = l2
-                head = head.next
-                l2 = l2.next
+            head.next = l2
         if not l2:
-            while l1:
-                head.next = l1
-                head = head.next
-                l1 = l1.next
+            head.next = l1
         return tmp.next
